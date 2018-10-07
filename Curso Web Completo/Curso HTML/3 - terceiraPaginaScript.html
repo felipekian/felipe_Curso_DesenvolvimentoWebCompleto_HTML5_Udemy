@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Usando Script</title>
+        
+        <!-- Coloca o conteudo de css da pagina -->
+        <style>
+            body{
+                background: #ccc;
+                font-family: cursive, sans-serif;
+                color: #000;
+                font-size: 38px;
+                margin: 50px 50px;
+                font-weight: bold;
+            }
+        </style>
+        
+        <!-- Coloca o conteudo das funcoes javaScript -->
+        <script>
+            function escreverNome(){
+                nome.innerHTML = "Felipe Derkian";
+                curso.innerHTML = "HTML com JavaScript";
+            }
+            
+            <!-- Chama a funcao escreverNome quando a pagina for carregada -->
+            window.onload = escreverNome;
+        </script>    
+    
+    </head>
+    <body>
+        <p id="nome"></p>
+        <h1 id="curso"></h1>
+        <!-- 
+         paga adicionar conteúdo no html indiretamente, precisamos 
+         criar o elemento desejado ex. <h1> colocar um id nesse elemento
+         e com o javaScript adicionar usando `nomeId.innerHTML = "texto desejado como no exemplo acima";` 
+        -->
+    </body>
+</html>

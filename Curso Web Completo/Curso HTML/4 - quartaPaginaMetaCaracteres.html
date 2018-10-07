@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        
+        <title>Meta Dados refresh HTML</title>
+        
+        <!-- meta para configuracao de caractere -->
+        <meta charset="utf-8">
+        
+        <!-- meta para indicar quem é o autor do documento -->
+        <meta name="author"     content="Felipe Derkian">
+        
+        <!-- meta para indicar qual programa gerou tal página -->
+        <meta name="generator"  content="Brackets">
+        
+        <!-- meta para indicar palavras chaves que os buscadores devem procurar -->
+        <meta name="keywords"   content="HTML5, Curso HTML, JS, JavaScript, Front-End">
+        
+        <!-- ... decricao da pagina -->
+        <meta name="description" content="Página do curso de HTML5">
+        
+        <!-- informar o nome da aplicação -->
+        <meta name="application-name" content="Nome da aplicação">
+        
+        <!-- Atualização da pagina e de quanto em quanto tempo ele atualiza -->
+        <meta http-equiv="refresh" content="2">
+        
+        <!-- CSS -->
+        <style>
+            body{
+                background: #ccc;
+                font-family: cursive, sans-serif, serif;
+                color: #fff;
+                font-size: 38px;
+            }
+        </style>
+        
+        <!-- JavaScript -->
+        <script>
+            function sorteioNumero(){
+                resultado.innerHTML = parseInt( Math.random() * 50 );
+            }
+            window.onload = sorteioNumero;
+            
+            /*Função para escrever na tela*/
+            function escreverNaTela(){
+                nome.innerHTML = "Escrevendo na tela com JS."
+            }
+            //quando a página é carregada é invocada a funcao JS escreverNaTela
+            //window.onload = escreverNaTela;
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1 id="nome"></h1>
+        <h3 id="resultado"></h3>
+        
+        <h1>Aula sobre Refresh da pagina automaticamente de tempo em tempo usando <b>META DADO</b> refresh</h1>
+    </body>
+</html>
